@@ -1,7 +1,11 @@
 package org.hechuans.demo.cloud.order.model.vo;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
 
 /**
  * @author : hechuansheng
@@ -10,7 +14,11 @@ import lombok.Data;
  */
 @Data
 @Builder
-public class UserVO {
+@AllArgsConstructor
+@NoArgsConstructor
+public class UserVO implements Serializable {
+
+    private static final long serialVersionUID = 42L;
 
     private Integer userId;
 

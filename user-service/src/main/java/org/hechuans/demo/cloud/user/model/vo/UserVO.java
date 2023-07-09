@@ -3,6 +3,8 @@ package org.hechuans.demo.cloud.user.model.vo;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author : hechuansheng
  * @date : 2023/6/30 17:05
@@ -10,7 +12,9 @@ import lombok.Data;
  */
 @Data
 @Builder
-public class UserVO {
+public class UserVO implements Serializable {
+
+    private static final long serialVersionUID = 42L;
 
     private Integer userId;
 
